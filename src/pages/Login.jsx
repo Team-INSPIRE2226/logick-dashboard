@@ -22,7 +22,7 @@ const [showPassword, setShowPassword] = useState(false)
   useEffect(() => {
     const token = Cookies.get("auth-token")
     if (token) {
-      navigate("/dashboard")
+      navigate("/")
     }
   }, [navigate])
 
@@ -39,7 +39,7 @@ const [showPassword, setShowPassword] = useState(false)
           // remove secure:true in localhost
         })
 
-        navigate("/dashboard")
+        navigate("/")
       }
     } catch (err) {
       alert("Login failed")

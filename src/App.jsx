@@ -13,12 +13,15 @@ export default function App() {
       <Route path="/" element={<Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<ProtectedRoute>
+      <Layout />
+    </ProtectedRoute>
+}>
           <Route index element={<Dashboard />} />
           <Route path="logs" element={<AllLogsPage />} />
           <Route path="analytics" element={<AnalyticsPage/>}/>
           <Route path="settings" element={<SettingsPage/>}/>
-          
+
         </Route>
       
     </Routes>
