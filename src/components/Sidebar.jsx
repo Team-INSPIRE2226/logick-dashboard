@@ -34,7 +34,7 @@ export default function Sidebar() {
         <div 
         onClick={() => navigate("/analytics")}
         className="p-2 rounded-md hover:bg-muted cursor-pointer">
-          Analytics
+          Throtled Requests
         </div>
 
         <div 

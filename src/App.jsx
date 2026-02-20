@@ -7,6 +7,7 @@ import AllLogsPage from "./pages/AllLogsPage"
 import Layout from "./pages/Layout"
 import AnalyticsPage from "./pages/AnalyticsPage"
 import SettingsPage from "./pages/SettingsPage"
+import BlockedRequests from "./components/blockedRequests"
 export default function App() {
   return (
     <Routes>
@@ -19,7 +20,7 @@ export default function App() {
 }>
           <Route index element={<Dashboard />} />
           <Route path="logs" element={<AllLogsPage />} />
-          <Route path="analytics" element={<AnalyticsPage/>}/>
+          <Route path="analytics" element={<BlockedRequests/>}/>
           <Route path="settings" element={<SettingsPage/>}/>
 
         </Route>
